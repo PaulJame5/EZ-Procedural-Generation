@@ -26,7 +26,6 @@ public class ProceduralLevelGenerator : MonoBehaviour
 
     public int width = 5, height = 5;
 
-    //public GameObject[][] map;
 
     public Direction direction;
     private Direction arrivedFrom;
@@ -35,7 +34,7 @@ public class ProceduralLevelGenerator : MonoBehaviour
 
     public int seed = 42;
 
-    GameObject[,] map;
+    private GameObject[,] map;
 
     public enum Direction
     {
@@ -49,23 +48,7 @@ public class ProceduralLevelGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //lastMoveX.Add(5);
-        //lastMoveX.Add(6);
-        //lastMoveX.Add(7);
-        //for(int i = 0; i < lastMoveX.Count; i++)
-        //{
-        //    Debug.Log(lastMoveX[i]);
-        //}
-
-        //lastMoveX.RemoveAt(lastMoveX.Count - 1);
-
-        //for (int i = 0; i < lastMoveX.Count; i++)
-        //{
-        //    Debug.Log(lastMoveX[i]);
-        //}
-
-
-
+      
 
         map = new GameObject[width, height];
         for (y = 0; y < height; y++)
